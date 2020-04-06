@@ -23,13 +23,9 @@ class Artist
       found_artist
     else
       new_artist = self.new(artist_name)
-      new_artist.save
-      new_artist
     end
   end 
   def print_songs
-    @@all.each do |song|
-      puts song.name 
-    end
+     self.songs.each {|song| puts song.name}
   end 
 end 
