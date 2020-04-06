@@ -26,6 +26,6 @@ class Artist
     end
   end 
   def print_songs
-    @@all.select {|song| puts song.title} 
+    @@all.select {|song| puts song} 
   end 
 end 
